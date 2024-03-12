@@ -1,3 +1,3 @@
-git clone
-docker-compose up
-app running in localhos:8082
+git clone <br>
+docker-compose up <br>
+app running in localhos:8082 <br>
