@@ -2,7 +2,11 @@
 
 use module\user\UserService;
 
-$user = UserService::findByToken($_COOKIE['token'])
+$user = UserService::findByToken($_COOKIE['token']);
+
+if (!$user) {
+    header("Refresh:0");
+}
 ?>
 <script src="../../assets/js/home.js" lang="js" type="text/javascript"></script>
 <div class="container text-center">
